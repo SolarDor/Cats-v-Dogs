@@ -1,34 +1,11 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>");
-    $("ul#user").children("li").first().click(function() {
-      $(this).remove();
-    });
-    $("ul#webpage").children("li").first().click(function() {
-      $(this).remove();
-    });
+  $("button#meow").click(function() {
+    $("ul#cat").prepend("<li>Meow!</li>");
+    $("ul#dog").prepend("<li>Woof!</li>");
   });
 
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Goodbye, dear user!</li>");
-    $("ul#user").children("li").first().click(function() {
-      $(this).remove();
-    });
-    $("ul#webpage").children("li").first().click(function() {
-      $(this).remove();
-    });
-  });
-
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
-    $("ul#user").children("li").first().click(function() {
-      $(this).remove();
-    });
-    $("ul#webpage").children("li").first().click(function() {
-      $(this).remove();
-    });
+  $("button#woof").click(function() {
+    $("ul#cat").prepend("<li>Meow Hiss Meow!</li>");
+    $("ul#dog").prepend("Arf Arf Growl!</li>");
   });
 });
